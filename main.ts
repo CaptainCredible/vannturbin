@@ -25,6 +25,8 @@ radio.onReceivedString(function(receivedString: string) {
       pins.digitalWritePin(DigitalPin.P0, 0)
   }  else if(receivedString == "Stopp produksjon"){
       win()
+  } else if(receivedString == "reset"){
+      control.reset()
   }
 })
 

@@ -21,7 +21,7 @@ radio.onReceivedString(function(receivedString: string) {
     activityTime = input.runningTime()
   if(receivedString == "Start produksjon" ){
       pins.digitalWritePin(DigitalPin.P0,1)
-      basic.pause(100)
+      basic.pause(600)
       pins.digitalWritePin(DigitalPin.P0, 0)
   }  else if(receivedString == "Stopp produksjon"){
       win()
